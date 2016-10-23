@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NFC Gateway Alpha</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty_string"></string>
+
+    <!-- Read Fragment -->
+    <string name="read_toggle_info">Scan for new messages</string>
+    <string name="filler_string">lorem ipsum</string>
+
+    <!-- Write Fragment -->
+    <string name="write_toggle_info">Write to Tag</string>
+    <string name="username_form_hint">Username</string>
+    <string name="password_form_hint">Password</string>
+    <string name="misc_form_hint">Notes</string>
+
+    <!-- Info Fragment -->
+    <string name="UID_header">UID</string>
+    <string name="techlist_header">Tech List</string>
+    <string name="no_tag_detected">No tag detected.</string>
+    <string name="time_header">Time Detected</string>
+</resources>

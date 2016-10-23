@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.enphaseenergy.nfcgatewayalpha.OneFragment">
+
+    <LinearLayout
+        android:id="@+id/scan_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/read_toggle_info"
+            android:layout_marginRight="10dp" />
+
+        <Switch
+            android:id="@+id/read_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Spinner
+        android:padding="5dp"
+        android:id="@+id/security_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scan_line" />
+
+    <!--
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/scan_line" />
+    -->
+
+    <TextView
+        android:id="@+id/time_read"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empty_string"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/security_spinner"/>
+
+    <ListView
+        android:id="@+id/records_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_below="@id/time_read"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+</RelativeLayout>
